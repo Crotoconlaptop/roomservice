@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Recordatorio de Platos</title>
+</head>
+<body>
+
+  <h1>Menu Reminder</h1>
+
+  <ul id="platos-lista">
+    <li class="plato" onclick="ampliarPlato('1.jpg', 'Baby corn fed chicken')">
+      <img src="1.jpg" alt="Plato 1">
+      <div>Baby corn fed chicken</div>
+    </li>
+    <li class="plato" onclick="ampliarPlato('2.jpg', 'Chilian Seabass Primavera')">
+      <img src="2.jpg" alt="Plato 2">
+      <div>Chilian Seabass Primavera</div>
+    </li>
+    <li class="plato" onclick="ampliarPlato('3.jpg', 'Club Sandwich')">
+        <img src="3.jpg" alt="Plato 2">
+        <div>Club Sandwich</div>
+      </li>
+      <li class="plato" onclick="ampliarPlato('4.jpg', 'Hummus and Labneh')">
+        <img src="4.jpg" alt="Plato 2">
+        <div>Hummus and Labneh</div>
+      </li>
+      <li class="plato" onclick="ampliarPlato('5.jpg', 'Sackshuka')">
+        <img src="5.jpg" alt="Plato 2">
+        <div>Sackshuka</div>
+      </li>
+      <li class="plato" onclick="ampliarPlato('6.jpg', 'Lenderloin')">
+        <img src="6.jpg" alt="Plato 2">
+        <div>Lenderloin</div>
+      </li>
+    <!-- Agrega más elementos li según sea necesario -->
+  </ul>
+
+  <div id="plato-ampliado" onclick="cerrarAmpliacion()">
+    <img id="plato-ampliado-img" src="" alt="Plato Ampliado">
+    <div id="nombre-plato"></div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
+
+
+
